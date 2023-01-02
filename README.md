@@ -32,8 +32,8 @@ let () =
   let target = Plot.qt () in
   Plot.(run
          ~target
-         ~plot:(plot2 ~xaxis:"x" ~yaxis:"y" ~title:"sin" [sin])
-         exec)
+         exec
+         (plot2 ~xaxis:"x" ~yaxis:"y" ~title:"sin" [sin]))
 ```
 This produces something like this.
 ![Simple Plot](./assets/plot.png)
